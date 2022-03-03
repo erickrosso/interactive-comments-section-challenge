@@ -13,20 +13,25 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(206, 206, 206);
+    overflow-x: hidden;
 }
 
 .box {
     display: grid;
     grid-template-areas: 
-    "id foto nome delete edit"
-    "id comentario comentario comentario comentario";
-    width: 700px;
+    "id foto nome delete edit . "
+    "id comentario comentario comentario comentario update";
+    width: 870px;
     height: 150px;
     grid-template-columns: .1fr .1fr 2fr;
     background-color: white;
     overflow: hidden;
     margin: 10px;
     border-radius: 5px;
+}
+
+.update {
+    grid-area: update;
 }
 
 .btin {
@@ -56,6 +61,7 @@ body {
     grid-area: comentario;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.582);
+    font-size: 1rem;
 }
 
 .nome {
@@ -103,6 +109,8 @@ body {
     align-self: center;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.582);
+    margin-right: 20px;
+    font-size: 1rem;
 }
 
 .button {

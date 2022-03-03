@@ -16,28 +16,30 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <div id="coments">
+
+<body onload="personagemRandom()">
+  <script src="script.js"></script>
+  <div id="comments">
     <div class="box">
       <img class="foto" src="images/avatars/image-amyrobson.png" alt="imagem dinamica">
-      <h2 class="nome">Nome Dinamico</h2>
-      <h3 class="id">3</h3>
-      <p class="comentario">DinamicoComenátio Dinamico</p>
+      <h2 class="nome">Nome Dinâmico</h2>
+      <h3 class="id">#</h3>
+      <p class="comentario">Comentário Dinâmico</p>
       <input class="btin" type="button" value="Edit">
       <input class="btin red" type="button" value="Delete">
     </div>
     
   </div>
-  <div class="entrada">
-    <img class="foto" src="images/avatars/image-amyrobson.png" alt="imagem dinamica">
+  <div id="entrada" class="entrada">
+    <!-- <img id="avatarInicial" class="foto" src="images/avatars/image-amyrobson.png"> -->
     <input class="inputxt" placeholder="Add a comment..." type="text" id="text">
-    <input class="button" type="button" value="SEND" onclick="sendtext()">
+    <input class="button" type="button" value="SEND" onclick="send()">
   </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/erickrosso/interactive-comments-section-challenge.git">Erick de Rosso</a>.
-    <script src="script.js"></script>
+    
   </div>
 </body>
 </html>
